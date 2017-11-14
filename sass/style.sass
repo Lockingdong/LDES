@@ -1,0 +1,495 @@
+$color_white: #fffdfc
+$color_blue: #4d94ff
+$color_lightblue: #8ec6cf
+$color_green: #68EDC6
+$color_brown: #ae774d
+
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700')
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css)
+*
+  //border: 1px solid #000
+  box-sizing: border-box
+  //position: relative
+  letter-spacing: 1px
+  font-family: 微軟正黑體
+  
+  
+
+
+// debug
+// video, header, section, .bg, .nav, footer
+//   display: none
+// #section_location
+//   display: block
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
+  font-weight: bold
+
+body
+  overflow-x: hidden
+body, html
+  height: 100%
+  -webkit-overflow-scrolling: touch
+#skrollr-body
+  position: relative
+  //transform: translate3d(0,0,0)
+  .bg
+    //border: 1px solid #000
+    top: 0
+    position: fixed
+    z-index: -1
+    height: 750px
+    width: 100%
+    background-size: cover
+    background-position: center center
+    transition: 0.5s
+    //-webkit-transform: translate3d(0,0,0)
+.bgimg1
+  background-image: url(https://scontent.ftpe7-3.fna.fbcdn.net/v/t31.0-8/23550828_929019730585020_4515183792821107443_o.jpg?oh=a7d90f6f0ef07ecdde6a1d4a16d300a7&oe=5AACC672)
+.bgimg2
+  background-image: url(https://scontent.ftpe7-3.fna.fbcdn.net/v/t31.0-8/23550933_929025927251067_3564989658198162029_o.jpg?oh=28b110bc4fa199fff5dd011ff7ef258a&oe=5AA209A0)
+header.jumbotron
+  //padding: 0
+  text-align: center
+  background: rgba(#000, 0.3)
+  
+  background-size: cover
+  border-radius: 0
+  margin: 0
+  .container
+    padding: 200px 0
+    h1
+      color: $color_white
+      margin-bottom: 10px
+      font-size: 55px
+      margin-bottom: 50px
+    h3
+      font-size: 20px
+      color: $color_white
+      font-weight: 300
+      
+    hr
+      max-width: 50px
+      background: $color_lightblue
+      border: 2px solid $color_lightblue
+    h4
+      color: rgba(white, 0.7)
+      font-size: 18px
+      font-weight: 300
+      
+section
+  padding: 80px 0
+.col-md-12, .col-sm-12
+  h2
+    color: rgba(black, 0.8)
+    //padding-bottom: 8px
+    margin: 0
+    //border-bottom: 1px solid rgba(black, 0.4)
+    text-align: center
+    font-size: 25px
+    position: relative
+    &:before
+      content: ''
+      width: 80px
+      border-bottom: 1px solid #777
+      position: absolute
+      top: 50%
+      transform: translateX(-110%)
+    &:after
+      content: ''
+      width: 80px
+      border-bottom: 1px solid #777
+      position: absolute
+      top: 50%
+      transform: translateX(10%)
+    
+          
+      
+section#section_ask
+  background: $color_lightblue
+  padding: 40px 0
+  color: rgba(black, 0.6)
+  
+  .container
+    .row
+      .col-md-5.img
+        background-image: url(https://dl.dropbox.com/s/wajrydwpajcya3t/sea2.png?dl=0)
+        background-size: 70%
+        background-repeat: no-repeat
+        background-position: center center
+        height: 350px
+        //filter: grayscale(100%)
+      .col-md-7
+        height: 350px
+        position: relative
+        h2
+          position: absolute
+          top: 50%
+          transform: translateY(-50%)
+          font-size: 25px
+          line-height: 40px
+          &:before
+            content: '“'
+            font-size: 70px
+            font-family: 'Karla', sans-serif
+            //border: 1px solid #000
+            position: absolute
+            top: -30px
+          &:after
+            content: '”'
+            font-size: 70px
+            font-family: 'Karla', sans-serif
+            //border: 1px solid #000
+            position: absolute
+            right: 0
+            bottom: -50px
+        
+          
+section#section_intro
+  background: $color_white
+  .container
+    .row
+      padding: 10px 0
+      .col-md-12
+        h2
+          margin-bottom: 40px
+    .row
+      .col-md-7
+        
+        p
+          font-size: 15px
+          
+          //justify-content: center
+          //align-items: center
+      .col-md-5
+        img
+          width: 100%
+          
+section#section_edu
+  background: $color_white
+  .container
+    .row
+      .col-md-5
+        position: relative
+        height: 300px
+        div
+          height: 300px
+          width: 100%
+          position: absolute
+          left: 50%
+          top: 50%
+          transform: translate(-50%, -50%)
+          background-size: cover
+          background-position: 50% 50%
+        .img1
+          background-image: url(https://scontent.ftpe7-3.fna.fbcdn.net/v/t31.0-8/23509074_929025930584400_1817859328688858896_o.jpg?oh=0a27a619e4375543b142db9b57ddbc89&oe=5AABD174)
+          //animation: carousell 0.5s
+        .img2
+          background-image: url(https://scontent.ftpe7-3.fna.fbcdn.net/v/t31.0-8/23467118_929025917251068_3202570878925109330_o.jpg?oh=c14687a60da642fccfccd34cc5643d24&oe=5A9DCE92)
+          animation: 15s carousell infinite
+          
+          
+      .col-md-7
+        .icons
+          margin-top: 10px
+          margin-bottom: 20px
+        .col-sm-12
+          text-align: center
+          h2
+            margin-bottom: 20px
+            
+          .col-sm-4
+            text-align: center
+            padding: 10px 0
+            .icon
+              padding: 10px 0
+            
+          
+section#section_features
+  //background: $color_lightblue
+  background: $color_white
+  color: rgba(black, 0.7)
+  .container
+    .row
+      .col-md-12
+        h2
+          margin-bottom: 40px
+    .row
+      .col-md-4
+        text-align: center
+      .img_wrap
+        position: relative
+        height: 220px
+        overflow: hidden
+        margin-bottom: 10px
+        img
+          width: 110%
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          
+    .row
+      h3
+        font-size: 23px
+section#section_tour
+  padding: 70px 0
+  background: $color_brown
+  color: rgba(#333, 0.9)
+  h2
+    color: rgba(#333, 0.9)
+    &:before, &:after
+      //color: #563c28
+      border-bottom: 1px solid #563c28
+  .container_fluid
+    .row
+      .col-md-4
+        text-align: center
+        //overflow: hidden
+        .imgdiv
+          height: 180px
+          width: 180px
+          margin: 50px auto
+          margin-bottom: 30px
+          background-size: 100%
+          border-radius: 50%
+          transition: 0.4s
+          background-position: center center
+          &:hover
+            background-size: 110%
+            
+        .img_1
+          background-image: url(https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.0-9/23434961_929019743918352_4533412506727954516_n.jpg?oh=91a95b404d2638186a3b0ae8329fc1ff&oe=5AA4EA75)
+        .img_2
+          background-image: url(https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.0-9/23559797_929019907251669_6896505904320664046_n.jpg?oh=f2191515b366ed4a325edca01cba70ce&oe=5A63D4CA)
+        .img_3
+          background-image: url(https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.0-9/23621982_929019737251686_349862360007058228_n.jpg?oh=e6d73dc07aff58db185e6d51ac7bbade&oe=5A9BC6C6)
+          
+         
+        h4
+          text-align: center
+          font-weight: 500
+          color: rgba(black, 0.6)
+section#section_location
+  padding: 0
+  background: $color_lightblue
+  color: rgba(black, 0.7)
+  h2
+    color: rgba(black, 0.7) !important
+    font-weight: 900
+    position: relative
+    &:before
+      content: ''
+      width: 80px
+      border-bottom: 1px solid rgba(black, 0.7)
+      position: absolute
+      top: 50%
+      transform: translateX(-110%)
+    &:after
+      content: ''
+      width: 80px
+      border-bottom: 1px solid rgba(black, 0.7)
+      position: absolute
+      top: 50%
+      transform: translateX(10%)
+      //color: rgba($color_white, 0.8)
+  p
+    padding: 0px 20px
+  .container_fluid
+    .row
+      
+      .col-md-6
+        .col-md-12
+          font-size: 16px
+          text-align: center
+          .fa
+            font-size: 70px
+            padding-top: 30px
+            padding-bottom: 50px
+          h2
+            color: rgba($color_white, 0.8)
+            padding: 40px 0
+      .col-md-6
+        //transform: scale(1.2)
+        overflow: hidden
+        #map
+          height: 500px
+          
+
+// *
+//   border: 1px solid #000
+footer.jumbotron
+  background: #222
+  margin: 0
+  border-radius: 0
+  
+  position: relative
+  &:after
+    content: ''
+    display: block
+    width: 100%
+    height: 100%
+    //border: 1px solid #000
+    //background-image: url(https://scontent.ftpe7-3.fna.fbcdn.net/v/t31.0-8/23550933_929025927251067_3564989658198162029_o.jpg?oh=28b110bc4fa199fff5dd011ff7ef258a&oe=5AA209A0)
+    background-position: 50% 50%
+    position: fixed
+    top: 1000px
+    left: 0
+    z-index: -1
+  .container 
+    .row
+      .col-md-12
+        text-align: center
+        a
+          text-decoration: none
+        .fa
+          &:hover
+            transform: scale(1)
+            color: rgba($color_white, 1)
+        h2
+          color: rgba($color_white, 0.7)
+          font-weight: 100
+        #address 
+          font-size: 60px
+        .contact-icon          
+          //margin: 60px 20px
+          //padding: 60px 0
+          height: 65px
+          width: 65px
+          color: rgba($color_white, 0.7)
+          transition: 0.3s
+          border-radius: 50%
+          border: 2px solid rgba($color_white, 0.7)
+          padding-top: 15px
+          font-size: 30px
+          margin: 0 10px
+          transform: scale(0.8)
+          
+        #phone, #fax, #address
+          padding: 0
+          margin: 2px 0
+          color: rgba($color_white, 0.6)
+      .addressT
+        margin-top: 40px
+        margin-bottom: 5px
+      .addressM
+        font-weight: 100
+        //font-size: 15px
+        color: rgba($color_white, 0.7)
+        font-size: 15px
+      .addressB
+        margin-bottom: 40px
+        div
+          display: inline-block
+          color: rgba($color_white, 0.6)
+          font-weight: 100
+      .copyright
+        //border-top: 1px solid #777
+        margin-top: 40px
+        color: #777
+        font-size: 10px
+
+      
+        
+          
+@media screen and (min-width: 992px)
+  header
+    h1
+      font-size: 70px !important
+  #section_intro
+    p
+      margin-top: 50px
+@media screen and (max-width: 992px)
+  .location_info
+    padding: 20px 0 !important
+  #section_edu
+    h2
+      margin-top: 30px !important
+      
+@media screen and (max-width: 768px)
+  #section_tour
+    .imgdiv
+      //display: none
+      //height: 500px
+      height: 300px !important
+      width: 300px !important
+  header.jumbotron
+    .container
+      h3
+        font-size: 20px !important
+      h1
+        font-size: 40px !important
+
+// .col-sm-4
+//   display: inline-block
+
+@keyframes carousell
+  0%
+    opacity: 0
+  50%
+    opacity: 1
+  100%
+    opacity: 0
+
+nav
+  transition: 0.5s
+  box-shadow: 1px 0 5px #000
+  a
+    cursor: pointer
+
+.navbar-toggle
+  transition: 0.3s
+  &:focus, &:hover
+    background: transparent !important
+  &:hover
+    background: rgba(#000, 0.2) !important
+.navbar-top
+  background: transparent !important
+  border-bottom: 1px solid rgba($color_white, 0.4)
+  box-shadow: 1px 0 15px transparent
+  
+  a
+    color: rgba($color_white, 0.8) !important
+    transition: 0.3s
+    cursor: pointer !important
+    &:hover
+      background: rgba(#000, 0.2) !important
+      text-shadow: 0 1px 5px rgba(#000, 0.8)
+      color: rgba($color_white, 1)
+      cursor: pointer !important
+  .icon-bar
+    background-color: rgba($color_white, 0.7) !important
+
+.blur
+  filter: blur(5px)
+  
+.ToTopBtn
+  position: fixed
+  //border: 1px solid #000
+  z-index: 100
+  width: 70px
+  height: 70px
+  right: 12px
+  bottom: 12px
+  border-radius: 50%
+  background: $color_lightblue
+  box-shadow: 0 1px 5px rgba(black, 0.4)
+  cursor: pointer
+  transition: 0.5s
+  //display: flex
+  .fa.fa-arrow-up.fa-2x
+    position: absolute
+    // justify-content: center
+    // align-items: center
+    font-size: 32px
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    color: $color_white
+    
+    
+.opacity0
+  opacity: 0
+.opacity1
+  opacity: 1
+    
